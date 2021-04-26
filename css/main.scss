@@ -20,61 +20,105 @@ body {
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .landing {
-    .container {
-        margin: 0 auto;
-        text-align: center;
+  .container {
+    margin: 0 auto;
+    text-align: center;
 
-        .left {
-            background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            padding: 2em;
-            color: white;
+    .left {
+      background: linear-gradient(
+        120deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 100%
+      );
+      padding: 2em;
+      color: white;
 
-            img {
-                width: 150px;
-            }
+      img {
+        width: 150px;
+      }
 
-            h1 {
-                margin: 2em 0;
-            }
+      h1 {
+        margin: 2em 0;
+      }
 
-            p {
-                line-height: 2em;
-            }
-        }
-
-        .right {
-            padding: 2em;
-
-            button {
-                width: 80%;
-                padding: 1em;
-                background: var(--primary-color);
-                color: white;
-                font-weight: bold;
-                font-size: .75em;
-                letter-spacing: 0.075em;
-                cursor: pointer;
-                border: none;
-                border-radius: .5em;
-            }
-        }
+      p {
+        line-height: 2em;
+      }
     }
+
+    .right {
+      padding: 2em;
+
+      button {
+        width: 80%;
+        padding: 1em;
+        background: var(--primary-color);
+        color: white;
+        font-weight: bold;
+        font-size: 0.75em;
+        letter-spacing: 0.075em;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.5em;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        font-size: 18px;
+  body {
+    font-size: 20px;
+  }
+
+  .app {
+    width: 80% !important;
+  }
+
+  button {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    display: grid;
+    grid-template-columns: 55% auto;
+    height: 100vh;
+
+    .left {
+      display: grid;
+      text-align: left;
+      padding: 0 2em !important;
+
+      .logo {
+        margin: 2em 0;
+      }
+
+      p {
+        line-height: 1.7em !important;
+      }
+
+      .content {
+        padding: 0 3em;
+
+        h1 {
+          margin: 0;
+          margin-bottom: 1em;
+          font-size: 2.4em;
+
+          span {
+            display: block;
+          }
+        }
+      }
     }
 
-    .app {
-        width: 80% !important;
+    .right {
+       align-self: center;
     }
-
-    button {
-        width: 60% !important;
-    }
+  }
 }

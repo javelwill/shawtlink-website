@@ -29,8 +29,7 @@ img {
 }
 
 .landing .container .left {
-  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
-  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(120deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   padding: 2em;
   color: white;
 }
@@ -57,22 +56,60 @@ img {
   background: var(--primary-color);
   color: white;
   font-weight: bold;
-  font-size: .75em;
+  font-size: 0.75em;
   letter-spacing: 0.075em;
   cursor: pointer;
   border: none;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 @media only screen and (min-width: 600px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
   .app {
     width: 80% !important;
   }
   button {
     width: 60% !important;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
+    height: 100vh;
+  }
+  .container .left {
+    display: -ms-grid;
+    display: grid;
+    text-align: left;
+    padding: 0 2em !important;
+  }
+  .container .left .logo {
+    margin: 2em 0;
+  }
+  .container .left p {
+    line-height: 1.7em !important;
+  }
+  .container .left .content {
+    padding: 0 3em;
+  }
+  .container .left .content h1 {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 2.4em;
+  }
+  .container .left .content h1 span {
+    display: block;
+  }
+  .container .right {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
