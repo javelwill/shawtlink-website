@@ -56,6 +56,22 @@
         </div>
     </div>
 
+    <script>
+        let left = document.querySelector('.left')
+        let content = document.querySelector('.content')
+        let marks = document.querySelectorAll('.mark')
+
+        left.addEventListener('mousemove', (event) => {
+            let move = (event.clientX * 0.05) + 4
+            let move2 = (event.clientX * 0.003)
+
+            content.style.transform = `translateX(-${move2}%)`
+            marks.forEach(mark => {
+                mark.style.transform = `translateX(${move}%)`
+            })
+        })
+    </script>
+
 </body>
 
 </html>
