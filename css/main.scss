@@ -16,7 +16,7 @@ body {
   font-family: "Montserrat";
   height: 100vh;
   background: var(--tertiary-color);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 img {
@@ -50,7 +50,7 @@ img {
             padding: 2em;
 
             button {
-                width: 100%;
+                width: 80%;
                 padding: 1em;
                 background: var(--primary-color);
                 color: white;
@@ -62,5 +62,19 @@ img {
                 border-radius: .5em;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .app {
+        width: 80% !important;
+    }
+
+    button {
+        width: 60% !important;
     }
 }
