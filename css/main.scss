@@ -130,7 +130,7 @@ img {
     display: block;
     position: absolute;
     top: 20%;
-    height: 70%;
+    height: 80%;
     width: 100%;
     z-index: 0;
     color: white;
@@ -149,7 +149,7 @@ img {
         margin-left: 30%;
       }
       &:nth-child(2) {
-        margin-left: 10%;
+        margin-left: 5%;
       }
       &:nth-child(3) {
         margin-left: -5%;
@@ -159,7 +159,7 @@ img {
         transform: translateY(-100%);
       }
       &:nth-child(5) {
-        margin-left: 10%;
+        margin-left: 20%;
       }
       &:nth-child(6) {
         margin-left: -15%;
