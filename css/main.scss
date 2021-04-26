@@ -88,6 +88,9 @@ img {
 }
 
 @media only screen and (min-width: 960px) {
+  body {
+    overflow-y: hidden;
+  }
   .container {
     display: grid;
     grid-template-columns: 55% auto;

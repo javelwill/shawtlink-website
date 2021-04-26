@@ -80,6 +80,9 @@ img {
 }
 
 @media only screen and (min-width: 960px) {
+  body {
+    overflow-y: hidden;
+  }
   .container {
     display: -ms-grid;
     display: grid;
