@@ -16,8 +16,34 @@ body {
   font-family: "Montserrat";
   height: 100vh;
   background: var(--tertiary-color);
+  font-size: 18px;
 }
 
 img {
     width: 100%;
+}
+
+.landing {
+    .container {
+        margin: 0 auto;
+        text-align: center;
+
+        .left {
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 2em;
+            color: white;
+
+            img {
+                width: 150px;
+            }
+
+            h1 {
+                margin: 2em 0;
+            }
+
+            p {
+                line-height: 2em;
+            }
+        }
+    }
 }

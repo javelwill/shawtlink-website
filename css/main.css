@@ -16,9 +16,34 @@ body {
   font-family: "Montserrat";
   height: 100vh;
   background: var(--tertiary-color);
+  font-size: 18px;
 }
 
 img {
   width: 100%;
+}
+
+.landing .container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.landing .container .left {
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 2em;
+  color: white;
+}
+
+.landing .container .left img {
+  width: 150px;
+}
+
+.landing .container .left h1 {
+  margin: 2em 0;
+}
+
+.landing .container .left p {
+  line-height: 2em;
 }
 /*# sourceMappingURL=main.css.map */
